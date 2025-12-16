@@ -1,0 +1,11 @@
+services:
+  web:
+    image: decode-spam-headers
+    container_name: spam-decoder-app
+    ports:
+      - "18545:18545"
+    environment:
+      FLASK_APP: web_gui.py
+      FLASK_RUN_HOST: 0.0.0.0
+      FLASK_RUN_PORT: 18545
+    command: ["flask", "run"]

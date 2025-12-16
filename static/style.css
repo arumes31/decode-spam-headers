@@ -1,0 +1,147 @@
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2c2c2c; /* Darker background for the whole page */
+    color: #f8f9fa; /* Light text for the whole page */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Container (Input form) - Dark Mode */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #3a3a3a; /* Dark background for the container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Darker shadow */
+    color: #f8f9fa; /* Light text for the container */
+    margin-bottom: 20px; /* Add some space below the container */
+}
+
+h1 {
+    color: #5bc0de; /* Light blue for headings in dark mode */
+    text-align: center;
+}
+
+h2 {
+    color: #f8f9fa; /* Light color for h2 outside container */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px; /* Align with result section padding */
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555; /* Darker border */
+    font-family: monospace;
+    resize: vertical;
+    background-color: #4a4a4a; /* Dark background for textarea */
+    color: #f8f9fa; /* Light text */
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #5bc0de; /* Light blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #31b0d5; /* Darker blue on hover */
+}
+
+/* Result Section - Full Width & Dark Mode */
+#result {
+    background: #3a3a3a; /* Dark background */
+    color: #f8f9fa; /* Light text */
+    padding: 15px 20px; /* Padding for full width */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Darker shadow */
+    margin-top: 0; /* Remove top margin as it's outside container */
+    overflow-x: auto;
+}
+
+#result h2 {
+    color: #f8f9fa;
+    border-bottom: 2px solid #555; /* Darker border */
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+#result i {
+    color: #b0b0b0; /* Lighter grey for italic text */
+}
+
+#result a {
+    color: #5bc0de; /* Light blue for links */
+}
+
+/* Collapsible Section */
+details {
+    margin-bottom: 1rem;
+    border: 1px solid #555; /* Darker border */
+    border-radius: 4px;
+}
+
+summary {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #4a4a4a; /* Darker background for summary */
+    color: #f8f9fa; /* Light text */
+}
+
+details[open] > summary {
+    border-bottom: 1px solid #555; /* Darker border */
+}
+
+blockquote {
+    margin: 0;
+    padding: 1rem;
+    background-color: #4a4a4a; /* Dark background */
+    color: #f8f9fa; /* Light text */
+}
+
+code {
+    font-family: monospace;
+    white-space: pre-wrap;
+    color: #f8f9fa; /* Light text for code */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #555; /* Darker hr */
+}
+
+/* Text Color Classes from decode-spam-headers.py */
+/* Adjusted for dark mode readability */
+.text-white { color: #f8f9fa; } 
+.text-grey { color: #b0b0b0; } /* Lighter grey */
+.text-red { color: #dc3545; }
+.text-green { color: #28a745; }
+.text-yellow { color: #ffc107; }
+.text-blue { color: #5bc0de; } /* Light blue */
+.text-magenta { color: #e83e8c; }
+.text-cyan { color: #17a2b8; }
+
+/* Styles from decode-spam-headers.py output - to be overridden or integrated */
+body {
+    background-color: #2c2c2c !important; /* Force our background */
+    color: #f8f9fa !important;
+}
+
+#result div {
+    background: #3a3a3a !important; /* Override inline styles if any */
+    color: #f8f9fa !important;
+}

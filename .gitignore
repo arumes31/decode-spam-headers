@@ -1,0 +1,3 @@
+*.sh
+/__pycache__
+sample_headers.txt

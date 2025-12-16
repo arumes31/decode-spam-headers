@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decode Spam Headers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Decode Spam Headers</h1>
+        <form method="post">
+            <textarea name="headers" placeholder="Paste email headers here...">{{ headers }}</textarea>
+            <br>
+            <input type="submit" value="Decode">
+        </form>
+    </div>
+
+    {% if result %}
+        <h2>Result</h2>
+        <div id="result">{{ result|safe }}</div>
+    {% endif %}
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
